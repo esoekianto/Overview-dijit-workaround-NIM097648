@@ -40,8 +40,8 @@
         overviewMapDijit.startup();
 
         map.on("extent-change", function(){
-            var visi = overviewMapDijit.visible;
-            if (!visi){
+            //var visi = overviewMapDijit.visible;
+            if (!overviewMapDijit.visible){
               overviewMapDijit.destroy();
               overviewMapDijit = new OverviewMap({
                 map: map,
